@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #121214;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #202024;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #a855f7;
+        }
+
+        h2 {
+            color: #00bfff;
+        }
+
+        article {
+            background-color: #202024;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        strong {
+            color: #00bfff;
+        }
+
+        footer {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>GameZone</h1>
+        <h2>Sua loja gamer!</h2>
+        <p>Os melhores produtos para seu setup.</p>
+    </header>
+
+    <main>
+        <h2>PCs Gamers</h2>
+
+        <article>
+            <h3>PC Gamer Alpha</h3>
+            <p>Ideal para começar a jogar.</p>
+            <img src="https://cdn.dooca.store/1841/products/cubo-gpu-oyszs_640x640+fill_ffffff.jpg?v=1772823575&webp=0" alt="Logo do site">
+            <p><strong>R$ 3.299,90</strong></p>
+        </article>
+
+        <article>
+            <h3>PC Gamer Titan</h3>
+            <p>Alto desempenho para seus jogos.</p>
+            <img src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/222270" alt="Logo do site">
+            <p><strong>R$ 6.999,90</strong></p>
+        </article>
+
+        <h2>Acessórios</h2>
+
+        <article>
+            <h3>Teclado RGB</h3>
+            <p>Teclado com iluminação colorida.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAZS5Kw4webxb_uGqguHfR2CCzefkjUuOKC201maJzw&s=10" alt="Logo do site">
+            <p><strong>R$ 249,90</strong></p>
+        </article>
+
+        <article>
+            <h3>Mouse Gamer</h3>
+            <p>Precisão para suas partidas.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSVaViF81-vWtHzYAY7giustkn7PPikf2_UxjzyYlwOZg43tLUExCeEMP9DtrTnLwhaHWXqFhqh2zZody_MGzGVNbURvV655YohvuG388e_1lM67O8-Zz4CrZNOXiJzolJob6-ke4k&usqp=CAc" alt="Logo do site">    
+            <p><strong>R$ 149,90</strong></p>
+        </article>
+    </main>
+
+
+
+
+        <table border="1" style= "margin:auto">   
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Garantia</th>
+                <th>Cor</th>
+                <th>Parcelamento</th>
+                <th>Preço no PIX</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PC Gamer Alpha</td>
+                <td>1 Ano</td>
+                <td>Preto</td>
+                <td>12x de R$ 291,66</td>
+                <td>R$ 3.200,00</td>
+            </tr>
+            <tr>
+                <td>PC Gamer Titan</td>
+                <td>1 Ano</td>
+                <td>Preto</td>
+                <td>12x de R$ 590,00</td>
+                <td>R$ 6.900,00</td>
+            </tr>
+            <tr>
+                <td>Teclado RGB</td>
+                <td>6 Meses</td>
+                <td>Preto e RGB</td>
+                <td>3x de R$ 90,00</td>
+                <td>R$ 219,99</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Mouse Gamer</td>
+                <td>6 Meses</td>
+                <td>Preto</td>
+                <td>3x de R$ 55,00</td>
+                <td>R$ 119,99</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+
+
+
+
+
+     <!-- Fieldset: dados dos clientes -->
+    <fieldset>
+        <legend>Dados do cliente</legend>
+        <form action="">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+            <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </fieldset>
+    <!-- Configuração de hardware -->
+        <fieldset>
+            <legend>Configuração de hardware</legend>
+            <label for="gpu">Escolha sua placa de vídeo:</label>
+            <p>
+            <select name="gpu" id="gpu" required>
+                <option value="">Selecione uma GPU</option>
+                <option value="gtx1060">NVIDIA GTX 1060</option>
+                <option value="gtx1070">GTX 1070</option>
+                <option value="gtx1080">GTX 1080</option>
+            </select>
+        </p>
+        <p>
+        <input type="radio" name="jogos" id="jogos" value="jogos" checked>
+        <label for="jogos">Jogos</label><br>
+        <input type="radio" name="streaming" id="objetivo" value="streaming">
+        <label for="streaming">Streaming</label><br>
+        <input type="radio" name="objetivo" id="trabalho" value="trabalho">
+        <label for="trabalho">Edição de vídeos</label><br>
+        </p>
+        </fieldset>
+    </fieldset>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2026 GameZone</p>
+    </footer>
+
+
+
+<p><a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">Comprar pelo WhatsApp</a></p>
+
+</body>
+</html>
